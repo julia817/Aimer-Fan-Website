@@ -1,0 +1,408 @@
+<!-- 作成者：朱社佳　クラス：PI11A283 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transtional.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="content-style-type" content="text/css" />
+        <title>ライブ記録 | Aimerの世界</title>
+        <link rel="stylesheet" type="text/css" href="./css/common.css">
+        <link rel="stylesheet" type="text/css" href="./css/live.css">
+    </head>
+
+    <body>
+        <!-- ページトップへのボタン -->
+        <p class="top"><a class="button top" href="#header">TOP↑</a></p>
+
+        <!-- ヘッダー部分 -->
+        <div id="header">
+            <!-- <h1 id="logo">ようこそ、Aimerの世界へ</h1>  -->
+            <img src="./images/logo.png" alt="logo" id="logo">
+            <ul class="menu">
+                <li class="menu"><a class="button" href="./index.html">ホーム</a></li>
+                <li class="menu"><a class="button" href="./disco.html">作品リスト</a></li>
+                <li class="menu"><a class="button" href="./live_solo.html" id="highlight">ライブ記録</a></li>
+                <li class="menu"><a class="button" href="./news.html">ニュース</a></li>
+                <li class="menu"><a class="button" href="./comment.html">音楽性・評価</a></li>
+                <li class="menu"><a class="button" href="./link.html">各種リンク</a></li>
+            </ul>
+        </div>
+
+        <!-- 左側ナビゲーション -->
+        <div class="navi">
+            <!-- <h1>ライブ記録</h1> ヘッダーメニューはすでに日本語で書いてるので、重複しないよう見出しは英語に変更する -->
+            <h1>Live History</h1>
+            <hr class="navi">
+            <p class="navi">「悲しみとか喜びとか、どちらか一方だけを切り取るんじゃなくて、どちらも受け入れて歌いたい。」</p>
+            <ul class="navi">
+                <a href="./live_solo.html" class="button navi" id="highlight"><li class="navi">単独ライブ</li></a>
+                <a href="./live_concept.html" class="button navi"><li class="navi">コンセプトライブ</li></a>
+                <a href="#" class="button navi"><li class="navi">タワレコライブ</li></a>
+                <a href="#" class="button navi"><li class="navi">参加ライブ</li></a>
+            </ul>
+        </div>
+
+        <!-- 右側ライブ記録 -->
+        <div id="text">
+            <!-- 縦並びの時間線画像
+             色々調整してみたけど、下までいくと丸の部分がどうしても少しずつずれちゃうので、timeline.pngとtimeline2.pngを使って1pxの差で無理やり調整した
+             しかし、macbookでチェックした結果、やはりフォントなどの問題によってずれちゃうので、考え出した解決方法は下のtableに一緒に入れて隙間を消すこと -->
+            <!--
+			<div class="col" id="timeline">
+                <img src="./images/timeline5.png" alt="line" class="line">
+                <img src="./images/timeline2.png" alt="line" class="line">
+                <img src="./images/timeline2.png" alt="line" class="line">
+                <img src="./images/timeline2.png" alt="line" class="line">
+                <img src="./images/timeline2.png" alt="line" class="line">
+                <img src="./images/timeline.png" alt="line" class="line">
+                <img src="./images/timeline.png" alt="line" class="line">
+                <img src="./images/timeline2.png" alt="line" class="line">
+                <img src="./images/timeline2.png" alt="line" class="line">
+                <img src="./images/timeline2.png" alt="line" class="line">
+                <img src="./images/timeline2.png" alt="line" class="line">
+                <img src="./images/timeline.png" alt="line" class="line">
+                <img src="./images/timeline.png" alt="line" class="line">
+                <img src="./images/timeline.png" alt="line" class="line">
+                <img src="./images/timeline.png" alt="line" class="line">
+                <img src="./images/timeline.png" alt="line" class="line">
+                <img src="./images/timeline2.png" alt="line" class="line">
+                <img src="./images/timeline2.png" alt="line" class="line">
+                <img src="./images/timeline2.png" alt="line" class="line">
+                <img src="./images/timeline2.png" alt="line" class="line">
+                <img src="./images/timeline2.png" alt="line" class="line">
+                <img src="./images/timeline.png" alt="line" class="line">
+                <img src="./images/timeline.png" alt="line" class="line">
+                <img src="./images/timeline.png" alt="line" class="line">
+                <img src="./images/timeline2.png" alt="line" class="line">
+                <img src="./images/timeline2.png" alt="line" class="line">
+                <img src="./images/timeline.png" alt="line" class="line">
+                <img src="./images/timeline.png" alt="line" class="line">
+                <img src="./images/timeline.png" alt="line" class="line">
+                <img src="./images/timeline2.png" alt="line" class="line">
+                <img src="./images/timeline2.png" alt="line" class="line">
+                <img src="./images/timeline.png" alt="line" class="line">
+                <img src="./images/timeline.png" alt="line" class="line">
+                <img src="./images/timeline2.png" alt="line" class="line">
+                <img src="./images/timeline2.png" alt="line" class="line">
+                <img src="./images/timeline.png" alt="line" class="line">
+                <img src="./images/timeline.png" alt="line" class="line">
+                <img src="./images/timeline3.png" alt="line" class="line">
+            </div>
+ 			-->
+
+            <!-- 逆時系列のtable: 左は年、右は大文字のタイトルと小文字の日付場所 -->
+            <div class="col" id="detail">
+                <!-- 見映えのため、最終的に「年」一個だけ表示することにした -->
+                <table>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline4.png" alt="line"></td>
+                        <td rowspan="2" class="year">2019</td>
+                        <th class="title">Aimer Hall Tour 18/19　<a class="ticket" href="http://www.aimer-web.jp/live/" target="_blank"><img class="ticket" src="./images/button.png" alt="ticket site"></a></th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">1月5日~26日　宮城、岩手、兵庫、愛知、新潟、石川、大阪<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline4.png" alt="line"></td>
+                        <td rowspan="6" class="year">2018</td>
+                        <th class="title">Aimer Hall Tour 18/19　<a class="ticket" href="http://www.aimer-web.jp/live/" target="_blank"><img class="ticket" src="./images/button.png" alt="ticket site"></a></th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">10月31日～12月24日　千葉、福岡、広島、岡山、愛媛、栃木、埼玉、北海道、滋賀、奈良、東京、静岡<br>　</td>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2018</td> -->
+                        <th class="title">Aimer Fan Club Tour "été"</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">8月7日~13日　愛知、大阪、東京<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2018</td> -->
+                        <th class="title">Aimer LIVE TOUR 17/18 "hiver"</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">1月14日～2月21日　長野、広島、京都、大阪、福岡、東京<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline4.png" alt="line"></td>
+                        <td rowspan="10" class="year">2017</td>
+                        <th class="title">Aimer LIVE TOUR 17/18 "hiver"</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">11月16日～12月24日　埼玉、北海道、静岡、新潟、岡山、兵庫、宮城、群馬、愛知<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2017</td> -->
+                        <th class="title">Aimer Live in 武道館 "blanc et noir"　<a class="dvd" href="./dvd.html"><img class="dvd" src="./images/button2.png" alt="dvd page"></a></th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">8月29日 日本武道館<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2017</td> -->
+                        <th class="title">Aimer SPECIAL LIVE "blanc"　Aimer SPECIAL LIVE "noir"</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">6月15日 東京　6月29日 大阪<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2017</td> -->
+                        <th class="title">Happiring 1st Anniversary "Aimer Premium Accoustic Live" FUKUI</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">4月1日 福井<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2017</td> -->
+                        <th class="title">Aimer Accoustic Live Tour 2017</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">2月10日~25日　東京、大阪、愛知<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline4.png" alt="line"></td>
+                        <td rowspan="20" class="year">2016</td>
+                        <th class="title">Aimer new album『daydream』リリース記念 Aimer Xmas SPECIAL LIVE</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">12月23日 東京　12月25日 大阪<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2016</td> -->
+                        <th class="title">毎日がクリスマス2016Aimer</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">12月15日 横浜赤レンガ倉庫<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2016</td> -->
+                        <th class="title">Aimer Hall Tour 2016 "like a daydream"</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">9月21日～11月19日　埼玉、広島、兵庫、新潟、福岡、宮城、北海道、大阪、愛知、東京、台湾<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2016</td> -->
+                        <th class="title">Aimer 5th Anniversary Special Event</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">9月11日 東京<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2016</td> -->
+                        <th class="title">Aimer『insane dream/us』発売記念 福岡限定プレミアムライブ</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">7月29日 福岡<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2016</td> -->
+                        <th class="title">TOWER OF LOVERS in OSAKA</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">7月16日 タワーレコード梅田NU茶屋町店<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2016</td> -->
+                        <th class="title">Aimer『insane dream/us』リリース記念イベント"Proof in the Roof"</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">7月10日 宮城　7月17日 愛媛<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2016</td> -->
+                        <th class="title">Aimer福岡限定SPECIAL LIVE「Heaven's Gate」</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">6月18日 福岡<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2016</td> -->
+                        <th class="title">TSUTAYA RECORDS presents Aimer「ninelie」スペシャルライブ</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">5月21日 東京<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2016</td> -->
+                        <th class="title">Aimer Billboard Live Tour</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">3月21日 大阪　3月27、28日 東京<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline4.png" alt="line"></td>
+                        <td rowspan="12" class="year">2015</td>
+                        <th class="title">Aimer X'mas Live for Blanc et Noir Prime Member</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">12月24日 東京<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2015</td> -->
+                        <th class="title">Aimer Live Tour "DAWN"　<a class="dvd" href="./dvd.html"><img class="dvd" src="./images/button2.png" alt="dvd page"></a></th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">9月22日～11月3日　石川、宮城、愛知、福岡、大阪、東京<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2015</td> -->
+                        <th class="title">TSUTAYA RECORDS presents Aimer スペシャルライブ "Re:far"</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">9月4日 東京<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2015</td> -->
+                        <th class="title">Aimer「DAWN」リリース記念イベント</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">7月29日 東京<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2015</td> -->
+                        <th class="title">Aimer「Brave Shine」プレミアムライブ</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">6月10日 大阪<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2015</td> -->
+                        <th class="title">Aimer Live Tour "Maiden Voyage"</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">1月17日～2月15日　大阪、福岡、愛知、東京<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline4.png" alt="line"></td>
+                        <td rowspan="10" class="year">2014</td>
+                        <th class="title">Aimer 1st Live Midnight Sun</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">8月27日 大阪　9月5日 東京<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2014</td> -->
+                        <th class="title">山野楽器限定 Aimer「Midnight Sun」リリース記念ミニライブ</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">8月6日 東京<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2014</td> -->
+                        <th class="title">Live in Chepelle Des Anges</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">8月5日 福岡<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2014</td> -->
+                        <th class="title">Stardust August</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">8月1日 東京<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2014</td> -->
+                        <th class="title">SawanoHiroyuki[nZk]:Aimer「UnChild」</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">5月30日 大阪　6月1日 東京<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline4.png" alt="line"></td>
+                        <td rowspan="8" class="year">2013</td>
+                        <th class="title">Aimer Xmas Live</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">12月22日 東京<br>　</td>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2013</td> -->
+                        <th class="title">Aimwer Premier Live in Church</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">4月11日 東京　4月18日 大阪<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2013</td> -->
+                        <th class="title">Aimer in Cafe Style "Relax Live"</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">4月13日 東京<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2013</td> -->
+                        <th class="title">Her Mind's Voice</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">3月23日 東京<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline4.png" alt="line"></td>
+                        <td rowspan="8" class="year">2012</td>
+                        <th class="title">Aimer Premier Live Vol.3</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">10月25日～11月30日　大阪、東京、宮城、福岡<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2012</td> -->
+                        <th class="title">Aimer Premier Live Vol.2 in Planetarium</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">9月28日 東京　9月30日 大阪<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2012</td> -->
+                        <th class="title">Aimer×レコチョック SP LIVE</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">8月10日 東京<br>　</td>
+                    </tr>
+                    <tr>
+                    	<td rowspan="2"><img src="./images/timeline6.png" alt="line"></td>
+                        <!-- <td rowspan="2" class="year">2012</td> -->
+                        <th class="title">Aimer Premier Live Vol.1</th>
+                    </tr>
+                    <tr>
+                        <td class="schedule">6月8日 東京<br>　</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- フッター部分 -->
+        <div id="footer">
+			<!-- <hr> -->
+            <p id="copyright">Copyright &copy; 2018 Julia Zhu. All rights reserved.
+        </div>
+    </body>
+</html>

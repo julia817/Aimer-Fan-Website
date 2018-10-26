@@ -1,0 +1,103 @@
+/* 全てのページがCSSファイルを応用してる */
+/* 全ページの背景画像：白の文字などを見やすくするために、普通の画像にphotoshopで半透明の黒いレイヤーマスクを付け加えた */
+
+/* なくても全然大丈夫だが、ページ内リンクをクリックした時スムーズなスクロール効果が欲しいのでとりあえず付ける */
+html {
+	scroll-behavior: smooth;
+}
+
+/* CSSリセット */
+ul, li, h1, h2, h3, p, img, hr, iframe, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 多分あんまり関係ないし授業中習ってないが、ウィンドウ枠が小さくなった時にもレイアウト崩させたくないので、一応書いとく
+marginやpaddingも基本的にウィンドウサイズに合わせるために%の数字で書いる */
+body {
+    min-width: 1000px;
+
+    /* 読みやすくするために、基本フォントはゴシック系にする
+    変更になる場合はまた各ページのCSSファイルで書く */
+    font-family: '游ゴシック', 'Yu Gothic', 'ＭＳ ゴシック', 'MS Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', '游ゴシック体', 'YuGothic', 'ヒラギノ丸ゴ Pro W4', 'Hiragino Maru Gothic Pro';
+}
+
+/* ページトップへのボタン */
+p.top {
+/*     border: none; */
+    position: fixed;
+    right: 0;
+    bottom: 120px;
+    font-size: 20px;
+}
+a.top {
+	background-color: #09041a;
+}
+
+/* ヘッダー部分 */
+#header {
+    /* display: block; */
+    background-color: #09041a;
+    overflow: auto;
+    /* ヘッダーを固定したらbodyのmin-widthが効かなくなるのでやめた */
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; */
+}
+
+/* logo画像 */
+img#logo {
+    float: left;
+    margin: 9px auto 5px 20px;
+    width: auto;
+    height: 60px;
+}
+/* メニューボタン */
+ul.menu {
+    float: right;
+    margin: 20px 20px 20px auto;
+}
+li.menu {
+    display: inline-block;
+    padding: 0 7px;
+    font-size: 18px;
+		font-weight: bold;
+}
+a.button {
+    color: #e9e8eb;
+    text-decoration: none;
+    border: solid 1px #dc7ea9;
+    padding: 4px;
+
+}
+a.button:hover {
+    background-color: #dc7ea9;
+}
+/* a:visited {
+    color:
+} */
+
+/* フッター部分 */
+#footer {
+    clear: both;
+    background-color: #09041a;
+    overflow: auto;
+    /* デバッグ用
+    border: solid 1px white; */
+}
+p#copyright {
+    margin: 20px;
+    text-align: center;
+    font-family: 'Monotype Corsiva', "Lucida Calligraphy", "Lucida Handwriting", "Brush Script MT", cursive, fantasy; /* copyrightはサインだと考え、少し派手な英文字にする */
+}
+
+/* 必要に応じてピンクの文字を作る */
+.pink {
+    color: #dc7ea9;
+}
+
+/* 今所在のページのボタンをハイライト表示 */
+#highlight {
+    background-color: #dc7ea9;
+}

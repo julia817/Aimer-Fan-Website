@@ -1,0 +1,81 @@
+body {
+    /* background-color: black; */
+    background: url(../images/news_back.jpg) #e9e8eb no-repeat;
+    background-size: 100% auto;
+    color: #09041a;
+}
+
+/* タイトル部分 */
+/* 全体レイアウトボックス */
+div.title {
+    clear: both;
+    color: #e9e8eb;
+    text-align: center;
+}
+/* タイトル文字 */
+h1 {
+	font-family: 'Monotype Corsiva', 'Luminari', cursive, 'Noteworthy', 'Georgia';
+    font-size: 50px;
+    padding-top: 100px;
+
+}
+/* タイトル下の区切り線 */
+hr.title {
+    width: 200px;
+    margin: 5px auto 20px auto;
+}
+/* 区切り線下の小文字 */
+p.title {
+    margin-bottom: 90px;
+    font-size: 18px;
+}
+
+/* ニュース内容部分 */
+/* 左右コラムに分かれる */
+#col1 {
+    float: left;
+    margin-left: 12%;
+    width: 35%;
+}
+#col2 {
+    float: right;
+    margin-right: 12%;
+    width: 35%;
+}
+h3, p.date {
+    text-align: center;
+}
+/* 本文の余白と背景 */
+div.text {
+    padding: 15px;
+    background-color: white;
+    /* border: solid 1px #828282; */
+    border-width: 5px;
+    border-style: double;
+    border-color: #828282;
+    margin-bottom: 50px;
+}
+/* ニュースの写真 */
+img.text {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+p.date {
+    color: #828282;
+    font-size: 13px;
+    margin-top: 5px;
+}
+hr.text {
+    width: 100px;
+    border: solid 2px #dc7ea9;
+    margin: 25px auto 35px auto;
+}
+p.text {
+    text-align: left;
+    font-size: 13px;
+}
+
+p#copyright {
+	color: #e9e8eb;
+}

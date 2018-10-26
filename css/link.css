@@ -1,0 +1,57 @@
+body {
+    background: url(../images/link_back.jpg) no-repeat;
+    background-size: 100% auto;
+    color: #e9e8eb;
+}
+
+/* タイトル部分 */
+h1 {
+	font-family: 'Monotype Corsiva', 'Luminari', cursive, 'Noteworthy', 'Georgia';
+    font-size: 50px;
+    text-align: center;
+    padding-top: 100px;
+}
+hr#title {
+    width: 200px;
+    margin: 5px auto 30px auto;
+}
+
+/* 本文部分ブロック */
+div#text {
+    clear: both;
+    margin-left: 25%;
+    margin-right: 20%;
+    padding-bottom: 80px;
+}
+
+/* リンク分類の見出し */
+h2 {
+    border-left: solid 10px #dc7ea9;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+/* リンク分類間の区切り線 */
+hr.link {
+    border: solid 0.5px #828282;
+    margin-bottom: 25px;
+    margin-top: 25px;
+	margin-right: 5%;
+}
+
+/* SNS画像リンク */
+img.sns {
+    width: 10%;
+    height: auto;
+    margin-right: 50px
+}
+/* FC画像リンク */
+img#fc {
+    width: 62%;
+    height: auto;
+}
+/* ショップと配信サイト画像リンク */
+img.shop, img.dl {
+    width: 20%;
+    height: auto;
+    margin-right: 25px;
+}

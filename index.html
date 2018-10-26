@@ -1,0 +1,94 @@
+<!-- 作成者：朱社佳　クラス：PI11A283 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transtional.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="content-style-type" content="text/css" />
+        <title>ホーム | Aimerの世界</title>
+        <link rel="stylesheet" type="text/css" href="./css/common.css">
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+    </head>
+
+    <body>
+        <!-- ページトップへのボタン -->
+        <p class="top"><a class="button top" href="#header">TOP↑</a></p>
+
+        <!-- ヘッダー部分 -->
+        <div id="header">
+            <!-- <h1 id="logo">ようこそ、Aimerの世界へ</h1>  -->
+			<!-- 印刷体の文字より、Microsoft Surfaceのペンを利用して簡単な手書きロゴを作ってみた -->
+            <img src="./images/logo.png" alt="logo" id="logo">
+            <ul class="menu">
+                <li class="menu"><a class="button" href="./index.html" id="highlight">ホーム</a></li>
+                <li class="menu"><a class="button" href="./disco.html">作品リスト</a></li>
+                <li class="menu"><a class="button" href="./live_solo.html">ライブ記録</a></li>
+                <li class="menu"><a class="button" href="./news.html">ニュース</a></li>
+                <li class="menu"><a class="button" href="./comment.html">音楽性・評価</a></li>
+                <li class="menu"><a class="button" href="./link.html">各種リンク</a></li>
+            </ul>
+        </div>
+
+        <!-- タイトル画面 -->
+        <div class="part1">
+            <h1>　ようこそ、</br>　Aimerの世界へ。</h1><!-- 符号付きだと文字左寄りに見えるので最初に一文字のスペースを入れた -->
+            <hr class="part1">
+            <p class="part1">ハスキーなのにクリアな響きを持ち<br>囁くような声や伸びやかに響く声など<br>一度聞くと魅了されてしまう不思議な歌声の持ち主</p>
+
+			<!-- これは下の画面に移行するページ内リンクのボタン
+			　　　三角形矢印のある四角い部分だけ押す機能付けたいので、棒と別々の画像にカットした
+			　　　また、画像を縦並びにするためblockに表示したけど、なぜかウィンドウ枠の横幅全体がクリックできてしまうので、pタグをつけた -->
+            <p><a href="#intro"><img class="jump" src="./images/jump1x.png" alt="arrow"></a></p>
+            <p><img class="jump" src="./images/jump2x_1.png" alt="arrow"></p>
+        </div>
+
+        <!-- 簡単な紹介画面 -->
+        <div class="part2" id="intro">
+        	<!-- 上の画像の続き、ページ内リンクのボタンが二つの画面とも半々占めさせたいので上下のボックスレイアウトdivに分かれて入れることにした -->
+            <p><img class="jump" src="./images/jump2x_2.png" alt="arrow"></p>
+            <h2>About</h2>
+            <hr class="part2">
+            <p class="part2">Aimer(エメ)、日本歌手、作詞家(aimerrhythm名義)。プロフィール非公開。所属レーベルはSME Records。<br>
+                2011年9月7日、シングル「六等星の夜/悲しみはオーロラに/TWINKLE TWINKLE LITTLE STAR」を発表し、メジャーデビュー。<br>
+                アーティスト名は、自身の長年の愛称である「エメ」に由来し[2]、フランス語で「愛する」「好む」を意味する動詞である。</p>
+            <div id="recent">
+                <div id="col1">
+                    <h3>最新シングル</h3>
+                    <p class="part2">Black Bird/Tiny Dancers/思い出は奇麗で<br>2018.09.05</p>
+                    <br>
+                    <p class="part2">Ref:rain/眩いばかり<br>2018.02.21</p>
+                </div>
+                <!-- <img src="./images/line.jpg" alt="line" class="line"> -->
+                <div id="col2">
+                    <h3>最新アルバム</h3>
+                    <p class="part2">BEST SELECTION "blanc" + "noir"<br>2017.05.03</p>
+                    <br>
+                    <p class="part2">daydream<br>2016.09.21</p>
+                </div>
+            </div>
+            <p><a href="#pv"><img class="jump" src="./images/jump1x.png" alt="arrow"></a></p>
+            <p><img class="jump" src="./images/jump2x_1.png" alt="arrow"></p>
+        </div>
+
+        <!-- 最新PV画面 -->
+        <div class="part3" id="pv">
+            <p><img class="jump" src="./images/jump2x_2.png" alt="arrow"></p>
+            <h2>Latest PV</h2>
+            <hr class="part3">
+            <div id="left">
+                <iframe width="450" height="253" src="https://www.youtube.com/embed/ax8DmYyx9Ms" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <p class="part3">9月5日発売Aimerの15枚目シングル収録<br>映画『累-かさね-』主題歌「Black Bird」</p>
+            </div>
+            <div id="right">
+
+                <iframe width="450" height="253" src="https://www.youtube.com/embed/mvkbCZfwWzA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <p class="part3">2018年1月より放送のTVアニメ「恋は雨上がりのように」の<br>エンディング・テーマ「Ref:rain（読み：リフレイン）」</p>
+            </div>
+        </div>
+
+        <!-- フッター部分 -->
+        <div id="footer">
+            <!-- <hr> -->
+            <p id="copyright">Copyright &copy; 2018 Julia Zhu. All rights reserved.</p>
+        </div>
+    </body>
+</html>

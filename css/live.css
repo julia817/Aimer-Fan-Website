@@ -1,0 +1,144 @@
+body {
+    /* background-color: black; */
+    background: url(../images/live_back.jpg) no-repeat fixed;
+    background-size: 100% auto;
+    color: #e9e8eb;
+}
+
+
+/* 左側ナビゲーション */
+/* 全体レイアウトボックス */
+div.navi {
+    clear: both;
+    position: fixed;
+    left: 8%;
+    /* bottom: 15%;　/* 固定してるため、bottomを設定しないと高さちょっと小さいウィンドウ枠の中では下の部分見えなくなります */
+    top: 20%;
+    float: left;
+    width: 17%;
+    /* デバッグ用
+    border: solid 1px white; */
+}
+
+/* 大見出し */
+h1 {
+    /* font-family: '游明朝', 'Yu Mincho', 'ＭＳ 明朝', 'MS Mincho', '游明朝体', 'YuMincho', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro'; */
+    font-family: 'Blackadder ITC', 'Monotype Corsiva', 'Luminari', 'Noteworthy', 'arial narrow'; /* 少しインパクト欲しいので、ちょっと可愛いフォントを選んだ */
+    text-align: left;
+    font-size: 41px;
+}
+
+/* 大見出し下の区切り線 */
+hr.navi {
+    width: 230px;
+    margin-bottom: 15px;
+}
+
+/* 区切り線下の小文字 */
+p.navi {
+    padding-bottom: 10%;
+    font-size: 17px;
+    line-height: 1.3em;
+}
+
+/* 箇条書きリンク */
+li.navi {
+    list-style-type: none;
+    text-align: center;
+    padding: 2px 0;
+}
+a.navi {
+    display: block;
+    color: #e9e8eb;
+    text-decoration: none;
+    border: solid 1px #e9e8eb;
+    /* padding: 20px auto 20px auto; */
+    /* width: 100px; */
+    margin: 10% 0;
+}
+
+
+/* 右側ライブ記録 */
+/* 全体レイアウトボックス */
+div#text {
+    float: right;
+    margin: 6% 8% 0 8%;
+    width: 60%;
+    padding-bottom: 80px;
+    overflow: auto;
+}
+/* 時間線の画像を縦並びにする */
+/*
+img.line {
+    display: block;
+    margin: 0;
+}
+ */
+/* 時間線の画像コラムとライブ記録のtableコラムを横並びで表示 */
+/*.col {
+    float: left;
+}*/
+
+/* 時間線の画像が隙間なく縦並べるように */
+table {
+	border-spacing: 0;
+}
+td {
+	padding: 0;
+}
+
+/* 年のセル */
+td.year {
+	padding-left: 5px;
+	padding-right: 20px;
+	vertical-align: top; /* 時間線画像の丸い部分とライブタイトルと揃うために */
+	font-size: 20px;
+}
+
+/* タイトルのセル */
+th {
+    font-size: 20px;
+    text-align: left;
+    vertical-align: top; /* 時間線画像の丸い部分と年と揃うために */
+	/* height:20px; */
+    /*  デバッグ用
+	border: solid 1px red; */
+}
+
+/* 日付と場所のセル */
+td.schedule {
+    font-size: 14px;
+    color: #828282;
+}
+
+/* チケット情報とライブ映像リンクボタン */
+img.ticket, img.dvd {
+    width: auto;
+    height: 20px;
+}
+
+
+
+/* コンセプトライブページ */
+/* 音符画像：右とスペース置く */
+h2 {
+    font-size: 30px;
+}
+p.pink {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    font-size: 18px;
+}
+th.mark {
+    padding-right: 10px;
+    padding-top: 5px;
+}
+/* ライブタイトル：大文字 */
+th.title {
+    font-size: 22px;
+}
+td.date {
+    padding-bottom: 20px;
+    font-size: 16px;
+    color: #828282;
+}

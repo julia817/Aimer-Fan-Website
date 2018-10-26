@@ -1,0 +1,76 @@
+body {
+    /* background-color: black; */
+    background: url(../images/comment_back.jpg) no-repeat fixed;
+    background-size: 100% auto;
+    color: #e9e8eb;
+}
+
+/* 本文部分 */
+.text {
+    clear: both;
+    margin: auto 18%;
+    padding-bottom: 100px;
+}
+
+/* タイトル部分 */
+h1, p.title {
+    text-align: center;
+    line-height: 1.5em;
+}
+
+/* タイトル */
+h1 {
+    /* padding-top: 100px; */
+    font-size: 45px;
+}
+h1.secret {
+    padding-top: 100px;
+}
+
+/* タイトル下の区切り線 */
+hr#title1 {
+    width: 245px;
+    margin: 0 auto 20px auto;
+}
+hr#title2 {
+    width: 470px;
+    margin: 0 auto 20px auto;
+}
+
+/* 区切り線下の小文字 */
+p.title {
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+/* 「声の秘密」本文部分 */
+ul.secret {
+    list-style-image: url(../images/list.png);
+}
+li.secret {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+li.pink {
+    font-style: oblique;
+    list-style-image: url(../images/list2.png);
+}
+p.secret {
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* アーティスト名 */
+h2 {
+    border-left: solid 10px #dc7ea9;
+    border-bottom: solid 1px #dc7ea9;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+p.comment {
+    font-size: 18px;
+}
